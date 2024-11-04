@@ -16,3 +16,5 @@ public interface IClientesService
     Task<List<ClientesDto>> Listar(Expression<Func<ClientesDto, bool>> criterio);
     Task<bool> ExisteCliente(int id, string nombres);
 }
+
+

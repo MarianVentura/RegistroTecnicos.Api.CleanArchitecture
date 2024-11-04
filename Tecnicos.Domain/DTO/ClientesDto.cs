@@ -12,3 +12,4 @@ public class ClientesDto
     public string? Nombres { get; set; }
     public string? WhatsApp { get; set; }
 }
+

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RegistroTecnicos.Api.CleanArchitecture.Models;
+using Tecnicos.Data.Models;
 
-namespace RegistroTecnicos.Api.CleanArchitecture.Context;
+namespace Tecnicos.Data.Context;
 
 public class TecnicosContext : DbContext
 {

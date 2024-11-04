@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RegistroTecnicos.Api.CleanArchitecture.Context;
-using RegistroTecnicos.Api.CleanArchitecture.Models;
+using Tecnicos.Data.Context;
+using Tecnicos.Data.Models;
 
 
 namespace RegistroTecnicos.Api.Controllers

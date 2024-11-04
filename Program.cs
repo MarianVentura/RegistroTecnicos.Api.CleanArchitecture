@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using RegistroTecnicos.Api.CleanArchitecture.Context;
-using RegistroTecnicos.Api.CleanArchitecture.Models;
+using Tecnicos.Data.Context;
+using Tecnicos.Services.DI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-var ConStr = builder.Configuration.GetConnectionString("SqlConStr");
-builder.Services.AddDbContextFactory<TecnicosContext>(o => o.UseSqlServer(ConStr));
+builder.Services.RegisterServices();
 
 var app = builder.Build();
 

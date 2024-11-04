@@ -5,5 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\Tecnicos.Abstractions\Tecnicos.Abstractions.csproj" />
+    <ProjectReference Include="..\Tecnicos.Data\Tecnicos.Data.csproj" />
+  </ItemGroup>
 
 </Project>
